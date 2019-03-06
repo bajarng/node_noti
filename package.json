@@ -7,7 +7,7 @@
     "node": "10.15.0"
   },
   "scripts": {
-    "test": "tap test/*.js"
+    "start": "node node_noti.js"
   },
   "repository": {
     "type": "git",
