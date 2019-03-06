@@ -1,0 +1,26 @@
+{
+  "name": "node_noti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bajarng/node_noti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bajarng/node_noti/issues"
+  },
+  "homepage": "https://github.com/bajarng/node_noti#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "content-disposition": "^0.5.3",
+    "express": "^4.16.4",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.0"
+  }
+}
