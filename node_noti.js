@@ -3,10 +3,10 @@ var app = require('express')();
 var port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
-//     res.send('<h1>Hello Node.js</h1>');
-// });
+    res.send('<h1>Hello Node.js</h1>');
+});
 
-// app.get('/index', function (req, res) {
+app.get('/index', function (req, res) {
   var request = require('request');
   const https = require('https');
 
