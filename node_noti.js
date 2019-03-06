@@ -1,15 +1,15 @@
-var request = require('request');
-const https = require('https');
-
 var app = require('express')();
 
-var port = process.env.PORT || 7777;
+var port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
     res.send('<h1>Hello Node.js</h1>');
 });
 
 app.get('/index', function (req, res) {
+  var request = require('request');
+  const https = require('https');
+
   var message = JSON.stringify({
     to: '/topics/chats',
     priority: 'normal',
@@ -30,7 +30,7 @@ app.get('/index', function (req, res) {
     body: message
   }
 
-  const req = https.request(options, (res) => {
+  const requ = https.request(options, (res) => {
     console.log(`statusCode: ${res.statusCode}`)
 
     res.on('message', (d) => {
@@ -38,12 +38,12 @@ app.get('/index', function (req, res) {
     });
   });
 
-  req.on('error', (error) => {
+  requ.on('error', (error) => {
     console.error(error)
   });
 
-  req.write(message);
-  req.end();
+  requ.write(message);
+  requ.end();
 });
 
 app.listen(port, function() {
