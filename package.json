@@ -23,6 +23,8 @@
     "commander": "^2.19.0",
     "content-disposition": "^0.5.3",
     "express": "^4.16.4",
+    "node-cron": "^2.0.3",
+    "opencollective-postinstall": "^2.0.2",
     "request": "^2.88.0"
   }
 }
