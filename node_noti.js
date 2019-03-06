@@ -31,7 +31,7 @@ const options = {
   body: message
 }
 
-cron.schedule("0,15 9,17 * * *", function() { 
+// cron.schedule("0,15 9,17 * * *", function() { 
     const req = https.request(options, (res) => {
       console.log(`statusCode: ${res.statusCode}`)
 
@@ -47,4 +47,4 @@ cron.schedule("0,15 9,17 * * *", function() {
     req.write(message);
     req.end();
 
-});
+// });
