@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bajarng/node_noti.git"
+    "url": "git+https://github.com/bbooooon/node_noti.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bajarng/node_noti/issues"
+    "url": "https://github.com/bbooooon/node_noti/issues"
   },
-  "homepage": "https://github.com/bajarng/node_noti#readme",
+  "homepage": "https://github.com/bbooooon/node_noti#readme",
   "dependencies": {
     "commander": "^2.19.0",
     "content-disposition": "^0.5.3",
